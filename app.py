@@ -267,7 +267,7 @@ from console_log import ConsoleLog
 
 import logging
 
-logger = logging.getLogger('console')
+logger1 = logging.getLogger('console')
 
 
 
@@ -285,7 +285,7 @@ def home():
 
 @app.route("/get")
 def get_bot_response():
-    logger.info("Error logged from Python")
+    logger1.info("Error logged from Python")
     userText = request.args.get('msg')
     msg5 = response(userText)
     #print(type(msg5))
