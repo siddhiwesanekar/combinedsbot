@@ -133,15 +133,15 @@ def bow(sentence, words, show_details=False):
     # tokenize the pattern
     sentence_words = clean_up_sentence(sentence)
     # bag of words
-    bag = [0]*len(words)
+    bag1 = [0]*len(words)
     for s in sentence_words:
         for i,w in enumerate(words):
             if w == s:
-                bag[i] = 1
+                bag1[i] = 1
                 if show_details:
                     print ("found in bag: %s" % w)
 
-    return(np.array(bag))
+    return(np.array(bag1))
 
 ERROR_THRESHOLD = 0.60
 def classify(sentence):
