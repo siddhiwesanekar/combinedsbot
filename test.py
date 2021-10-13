@@ -11,7 +11,7 @@ import pickle
 from console_log import ConsoleLog
 import logging
 
-logger = logging.getLogger('console')
+logger1 = logging.getLogger('console')
 
 
 
@@ -106,7 +106,7 @@ def response_command(sentence):
 
 
 def response(sentence, userID='123', show_details=False):
-    logger.info("Error from test")
+    logger1.info("Error from test")
     if 'None of the above' in sentence:
         return ['I do not know the answer to the question. Please contact Support Team']
 
