@@ -1,6 +1,7 @@
 import tensorflow as tf
 import nltk
-#nltk.download('punkt')
+nltk.download('punkt')
+nltk.download('averaged_perceptron_tagger')
 from nltk.stem.lancaster import LancasterStemmer
 stemmer = LancasterStemmer()
 import numpy as np
